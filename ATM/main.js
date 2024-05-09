@@ -19,6 +19,7 @@ let operationAns = await inquirer.prompt([
         choices: ["withdraw", "check balance"]
     }
 ]);
+console.log(operationAns);
 if (operationAns.operation === "withdraw") {
     let amountAns = await inquirer.prompt([
         {
